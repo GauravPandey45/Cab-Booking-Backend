@@ -27,11 +27,11 @@ public class DriverController {
 			log.info("Received driver registration request: {}",drivers);
 			Drivers driverRegisterReq = driversService.driverDetails(drivers);
 		if(driverRegisterReq == null) {
-			log.warn("Driver registration failed as driverRegisterReq is null: {}",driverRegisterReq);
+			log.error("Driver registration failed as driverRegisterReq is null: {}",driverRegisterReq);
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 		log.info("Driver registration completed for: {}", driverRegisterReq);
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(driverRegisterReq,HttpStatus.OK);
 		} catch(Exception e) {
 			log.error("Exception occured during driver registration", e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

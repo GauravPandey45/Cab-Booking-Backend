@@ -29,7 +29,7 @@ public class SecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		return	http.csrf(csrf -> csrf.disable())
 					.authorizeHttpRequests(authorize -> authorize
-							.requestMatchers("/customers/**","/drivers/**","/actuator/**").permitAll()
+							.requestMatchers("/customers/**","/drivers/**","/actuator/**","/auth/google/**").permitAll()
 							.anyRequest().authenticated())
 					.userDetailsService(customerDetailService)
 					.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)

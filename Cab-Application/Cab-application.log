@@ -1,0 +1,2 @@
+21:14:16.112 [http-nio-8005-exec-2] INFO  c.C.Controllers.DriverController - Received driver registration request: Drivers(driverId=0, driverName=Gopal, carDetails=Swift Dezire - KA67AB7665, location=Whitefield, Bangalore, status=null)
+21:14:16.527 [http-nio-8005-exec-2] INFO  c.C.Controllers.DriverController - Driver registration completed for: Drivers(driverId=5, driverName=Gopal, carDetails=Swift Dezire - KA67AB7665, location=Whitefield, Bangalore, status=AVAILABLE)

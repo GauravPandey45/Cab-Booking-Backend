@@ -32,7 +32,7 @@ public class CustomerController {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 		log.info("Customer signup completed for: {}", custSignUpReq);
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(custSignUpReq,HttpStatus.OK);
 		} catch(Exception e) {
 			log.error("Exception occured while signing up customer", e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

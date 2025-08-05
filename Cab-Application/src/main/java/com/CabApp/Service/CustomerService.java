@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import com.CabApp.DTO.LoginRequest;
+import com.CabApp.DTO.LoginRequestDTO;
 import com.CabApp.Entities.Customers;
 import com.CabApp.Enums.CustomerStatus;
 import com.CabApp.Repository.CustomerRepository;
@@ -44,7 +44,7 @@ public class CustomerService {
 		return customersrepository.save(customers);
 	}
 	
-	public String logIn(LoginRequest loginRequest) throws Exception {
+	public String logIn(LoginRequestDTO loginRequest) throws Exception {
 		log.debug("Entering Customer login method");
 		Authentication auth = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),loginRequest.getPassword()));
 		UserDetails userDetails = (UserDetails) auth.getPrincipal();

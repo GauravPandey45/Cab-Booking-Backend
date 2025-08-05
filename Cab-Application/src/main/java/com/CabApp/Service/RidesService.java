@@ -1,5 +1,4 @@
 package com.CabApp.Service;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import com.CabApp.DTO.RideEventDTO;
 import com.CabApp.Entities.Customers;
 import com.CabApp.Entities.Drivers;
 import com.CabApp.Entities.Rides;
@@ -19,6 +17,8 @@ import com.CabApp.Enums.RideStatus;
 import com.CabApp.Repository.CustomerRepository;
 import com.CabApp.Repository.DriversRepository;
 import com.CabApp.Repository.RidesRepository;
+import com.Kafka.DTO.RideEventDTO;
+
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 

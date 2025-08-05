@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.CabApp.Entities.Rides;
 import com.CabApp.Service.RidesService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
 @RequestMapping("/rides")
+@Tag(name="Rides APIs")
 public class RidesController {
 
 	@Autowired

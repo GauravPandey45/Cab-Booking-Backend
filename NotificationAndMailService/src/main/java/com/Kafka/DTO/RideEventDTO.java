@@ -1,4 +1,4 @@
-package com.NotificationAndMailService.DTO;
+package com.Kafka.DTO;
 
 
 import com.NotificationAndMailService.RideStatus;

@@ -35,7 +35,7 @@ public class Customers {
 	@Column(nullable = false)
 	private String phone;
 	
-	@Column(nullable = false)
+	@Column(nullable = false,unique = true)
 	private String username;
 	
 	@Column(nullable = false)

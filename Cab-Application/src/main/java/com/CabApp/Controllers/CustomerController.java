@@ -8,15 +8,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.CabApp.DTO.LoginRequest;
+import com.CabApp.DTO.LoginRequestDTO;
 import com.CabApp.Entities.Customers;
 import com.CabApp.Service.CustomerService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
 @RequestMapping("/customers")
+@Tag(name = "Customer APIs")
 public class CustomerController {
 	
 	@Autowired
@@ -40,7 +42,7 @@ public class CustomerController {
 	}
 	
 	@PostMapping("/login")
-	public ResponseEntity<String> loginCustomers(@RequestBody LoginRequest loginRequest) throws Exception {
+	public ResponseEntity<String> loginCustomers(@RequestBody LoginRequestDTO loginRequest) throws Exception {
 		try {
 			log.info("Received customer login request: {}", loginRequest);
 			String custLoginReq =  customerService.logIn(loginRequest);

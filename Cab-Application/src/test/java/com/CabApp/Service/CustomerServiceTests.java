@@ -19,7 +19,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-import com.CabApp.DTO.LoginRequest;
+import com.CabApp.DTO.LoginRequestDTO;
 import com.CabApp.Entities.Customers;
 import com.CabApp.Enums.CustomerStatus;
 import com.CabApp.Repository.CustomerRepository;

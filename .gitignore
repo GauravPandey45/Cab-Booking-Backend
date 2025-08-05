@@ -1,1 +1,3 @@
 /.metadata/
+Cab-Applicaion/src/main/resources/application.properties
+NotificationAndMailService/src/main/resources/application.properties

@@ -1,4 +1,4 @@
-package com.CabApp.DTO;
+package com.Kafka.DTO;
 
 import com.CabApp.Enums.RideStatus;
 

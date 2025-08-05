@@ -11,8 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.CabApp.Service.GoogleAuthService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/auth/google")
+@Tag(name="Google Auth APIs")
 public class GoogleAuthController {
 
 	@Autowired

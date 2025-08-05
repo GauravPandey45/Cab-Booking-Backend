@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.CabApp.Entities.Drivers;
 import com.CabApp.Service.DriversService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
 @RequestMapping("/drivers")
+@Tag(name="Driver APIs")
 public class DriverController {
 	
 	@Autowired

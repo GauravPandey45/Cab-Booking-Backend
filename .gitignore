@@ -1,3 +1,5 @@
 /.metadata/
-Cab-Applicaion/src/main/resources/application.properties
+Authentication-Service/src/main/resources/application.properties
+Cab-Service/src/main/resources/application.properties
+GatewayService/src/main/resources/application.properties
 NotificationAndMailService/src/main/resources/application.properties

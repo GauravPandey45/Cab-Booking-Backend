@@ -35,7 +35,7 @@ public class KafkaEventConsumer {
 			log.error("Received null or incomplete RideEventDTO from Kafka");
 			return;
 		}
-		log.debug("Received kafka event DTO: {}", rideEventDTO);
+		log.debug("Received kafka event: {}", rideEventDTO);
 		String subject="";
 		String message="";
 		
